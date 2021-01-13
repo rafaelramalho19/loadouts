@@ -6,87 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raising Warzone Loadouts</title>
 </head>
-<style>
-    body,
-    html {
-        background: black;
-        color: white;
-    }
-
-    .weapon {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    body {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .weapons {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    @media(max-width: 500px) {
-        .weapons {
-            display: block;
-        }
-    }
-
-    img {
-        width: 80%;
-        transition: transform 0.2s ease-in-out;
-    }
-
-    img:hover {
-        transform: scale(1.5)
-       
-    }
-
-    .titles {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    @media(max-width: 500px) { 
-        .titles {
-            display: none;
-        }
-    }
-
-    h2 {
-        width: 50%;
-        text-align: center;
-        position: relative;
-    }
-
-    h2::after {
-        content: '';
-        position: absolute;
-        top: 100%;
-        height: 1px;
-        background: white;
-        left: 0;
-        right: 0;
-    }
-
-    footer {
-        padding: 10vh 2vw;
-        text-align: center;
-    }
-
-    footer a {
-        color: lightblue;
-        font-size: 30px;
-    }
-</style>
+<link rel="stylesheet" href="style.css">
 
 <body>
     <div class="titles">
@@ -133,7 +53,27 @@
             </div>
         </div>
     </div>
+
+    <div id="overlay" hidden>
+        <img src="javascript:void(0)" alt="">
+        <button id="close-overlay">X</button>
+    </div>
     <footer><a href="https://twitch.tv/raisingz">twitch.tv/raisingz</a></footer>
+
+
+    <script>
+        const overlayElement = document.querySelector('#overlay');
+        const image = overlayElement.querySelector('img');
+
+        document.querySelectorAll('img').forEach(el => el.addEventListener('click', (ev) => {
+            overlayElement.removeAttribute('hidden')
+            image.setAttribute('src', ev.currentTarget.src)
+        }));
+
+        document.querySelector('#close-overlay').addEventListener('click', () => {
+            overlayElement.setAttribute('hidden', true)
+        })
+    </script>
 </body>
 
 </html>
