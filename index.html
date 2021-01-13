@@ -55,7 +55,7 @@
     </div>
 
     <div id="overlay" hidden>
-        <img src="javascript:void(0)" alt="">
+        <img src="" alt="">
         <button id="close-overlay">X</button>
     </div>
     <footer><a href="https://twitch.tv/raisingz">twitch.tv/raisingz</a></footer>
@@ -65,13 +65,27 @@
         const overlayElement = document.querySelector('#overlay');
         const image = overlayElement.querySelector('img');
 
+        const urlParams = new URLSearchParams(window.location.search);
+        const activeWeapon = decodeURIComponent(urlParams.get('gun'));
+
+        console.log(activeWeapon)
+
+        if(activeWeapon !== 'null' && !!activeWeapon) {
+            overlayElement.removeAttribute('hidden')
+            const activeElement = Array.from(document.querySelectorAll('h3')).filter(x => x.textContent === activeWeapon)
+            image.setAttribute('src', activeElement[0].parentNode.querySelector('img').src)
+        }
+
         document.querySelectorAll('img').forEach(el => el.addEventListener('click', (ev) => {
             overlayElement.removeAttribute('hidden')
             image.setAttribute('src', ev.currentTarget.src)
+            const weaponName = ev.currentTarget.parentNode.querySelector('h3').textContent
+            window.history.pushState(null, null, `?gun=${encodeURIComponent(weaponName)}`)
         }));
 
         document.querySelector('#close-overlay').addEventListener('click', () => {
             overlayElement.setAttribute('hidden', true)
+            window.history.replaceState({}, document.title, window.location.protocol + "//" + window.location.host + window.location.pathname);
         })
     </script>
 </body>
