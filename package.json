@@ -1,0 +1,23 @@
+{
+  "name": "loadouts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelramalho19/loadouts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelramalho19/loadouts/issues"
+  },
+  "homepage": "https://github.com/rafaelramalho19/loadouts#readme",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  }
+}
