@@ -7,10 +7,16 @@
     <title>Raising Warzone Loadouts</title>
     <meta name="description" content="Loadout list for twitch.tv/raisingz">
     <meta name="og:image" content="https://i.imgur.com/mpVR7I9.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 </head>
 <link rel="stylesheet" href="style.css">
 
 <body>
+    <header>
+        <a class='twitch' href="https://twitch.tv/raisingz"><img src="./twitch.svg"/> twitch.tv/raisingz</a>
+        <a class='coffee' href="https://www.buymeacoffee.com/raisingz"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=raisingz&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"></a>
+    </header>
     <div class="titles">
         <h2>Cold War</h2>
         <h2>Modern Warfare</h2>
@@ -100,8 +106,6 @@
         <img src="" alt="">
         <button id="close-overlay">X</button>
     </div>
-    <footer><a href="https://twitch.tv/raisingz">twitch.tv/raisingz</a></footer>
-
 
     <script>
         const overlayElement = document.querySelector('#overlay');
@@ -118,7 +122,7 @@
             image.setAttribute('src', activeElement[0].parentNode.querySelector('img').src)
         }
 
-        document.querySelectorAll('img').forEach(el => el.addEventListener('click', (ev) => {
+        document.querySelectorAll('.weapons img').forEach(el => el.addEventListener('click', (ev) => {
             overlayElement.removeAttribute('hidden')
             image.setAttribute('src', ev.currentTarget.src)
             const weaponName = ev.currentTarget.parentNode.querySelector('h3').textContent
@@ -128,6 +132,13 @@
         document.querySelector('#close-overlay').addEventListener('click', () => {
             overlayElement.setAttribute('hidden', true)
             window.history.replaceState({}, document.title, window.location.protocol + "//" + window.location.host + window.location.pathname);
+        })
+
+        document.addEventListener('keydown', (ev) => {
+            if(ev.code !== 'Escape') return;
+
+            overlayElement.setAttribute('hidden', true)
+            window.history.replaceState({}, document.title, window.location.protocol + "//" + window.location.host + window.location.pathname); 
         })
     </script>
 </body>

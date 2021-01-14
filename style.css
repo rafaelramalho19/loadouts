@@ -2,6 +2,31 @@ body,
 html {
   background: black;
   color: white;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 4vw;
+  border-radius: 20px;
+}
+
+.twitch {
+  color: lightblue;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.twitch img {
+    height: 50px;
+    margin-right: 1vw;
+}
+
+.coffee {
+  margin: 0 40px;
 }
 
 .weapon {
@@ -23,9 +48,9 @@ body {
   justify-content: space-evenly;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .weapons {
-    display: block;
+    flex-direction: column-reverse;
   }
 }
 
@@ -33,6 +58,12 @@ body {
   width: 80%;
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .weapons img {
+    width: 100%;
+  }
 }
 
 .weapons img:hover {
@@ -46,7 +77,7 @@ body {
   align-items: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .titles {
     display: none;
   }
@@ -71,11 +102,6 @@ h2::after {
 footer {
   padding: 10vh 2vw;
   text-align: center;
-}
-
-footer a {
-  color: lightblue;
-  font-size: 30px;
 }
 
 #overlay:not([hidden]) {
