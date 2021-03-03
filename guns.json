@@ -1,0 +1,110 @@
+{
+  "cold": [
+    {
+      "name": "FFAR",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/814622470870007818/unknown.png"
+    },
+    {
+      "name": "DMR",
+      "src": "https://media.discordapp.net/attachments/798993285213061151/809612004582883349/unknown.png"
+    },
+    {
+      "name": "Stoner 65",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/800107458181726268/unknown.png"
+    },
+    {
+      "name": "M16",
+      "src": "https://media.discordapp.net/attachments/798993285213061151/815003279007940618/unknown.png"
+    },
+    {
+      "name": "AUG",
+      "src": "https://media.discordapp.net/attachments/798993285213061151/815410731033165844/unknown.png"
+    },
+    {
+      "name": "Groza",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/812049940960116746/unknown.png"
+    },
+    {
+      "name": "MP5-CW",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/813530913782759434/unknown.png"
+    },
+    {
+      "name": "MAC10",
+      "src": "https://media.discordapp.net/attachments/798993285213061151/816160840478490634/unknown.png"
+    },
+    {
+      "name": "LW3 Tundra",
+      "src": "https://media.discordapp.net/attachments/798993285213061151/813639805819944971/unknown.png"
+    },
+    {
+      "name": "M82",
+      "src": "https://media.discordapp.net/attachments/798993285213061151/810936344615976990/unknown.png"
+    },
+    {
+      "name": "Diamatti",
+      "src": "https://snipboard.io/02jh3J.jpg"
+    }
+  ],
+  "mw": [
+    {
+      "name": "Amax",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/798997228311937094/unknown.png"
+    },
+    {
+      "name": "Kilo",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/798994467003695184/unknown.png"
+    },
+    {
+      "name": "Ram7",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/798994158647246909/unknown.png"
+    },
+    {
+      "name": "Grau",
+      "src": "https://media.discordapp.net/attachments/798993285213061151/808515741959061514/unknown.png"
+    },
+    {
+      "name": "FAL",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/798994812622602250/unknown.png"
+    },
+    {
+      "name": "ASVAL",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/804491784780251186/unknown.png"
+    },
+    {
+      "name": "MP5",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/798994980848402473/unknown.png"
+    },
+    {
+      "name": "R9",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/798995094933078046/unknown.png"
+    },
+    {
+      "name": "Kar98",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/798998238635098113/unknown.png"
+    },
+    {
+      "name": "Crossbow",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/798995235240804396/unknown.png"
+    },
+    {
+      "name": "HDR",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/798995413780004914/unknown.png"
+    },
+    {
+      "name": "AX-50",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/798995584551354378/unknown.png"
+    },
+    {
+      "name": "X-16",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/798995800063082547/unknown.png"
+    },
+    {
+      "name": "M19",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/798995960822759465/unknown.png"
+    },
+    {
+      "name": "Renetti",
+      "src": "https://cdn.discordapp.com/attachments/798993285213061151/798996089541886002/unknown.png"
+    }
+  ]
+}
