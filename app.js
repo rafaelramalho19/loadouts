@@ -7,6 +7,13 @@ const createGun = (gun) => {
   return div;
 };
 
+const createHead = (src) => {
+   const meta = document.createElement('meta')
+   meta.setAttribute('name', 'og:image')
+   meta.setAttribute('content', src)
+   document.querySelector('head').appendChild(meta)
+}
+
 cold.forEach((gun) =>
   document.querySelector(".cold-war").appendChild(createGun(gun))
 );
@@ -23,15 +30,14 @@ const activeWeapon = decodeURIComponent(urlParams.get("gun"));
 if (activeWeapon !== "null" && !!activeWeapon) {
   try {
     overlayElement.removeAttribute("hidden");
-    const activeElement = Array.from(document.querySelectorAll("h3")).filter(
-      (x) => x.textContent === activeWeapon
-    );
-    const { src } = activeElement[0].parentNode.querySelector("img");
+    const { src } = [...cold, ...mw].find((x) => x.name === activeWeapon);
     image.setAttribute("src", src);
-    document.querySelector('meta[name="og:image"]').setAttribute('content', src)
+    createHead(src)
   } catch (e) {
     console.error(e);
   }
+} else {
+    createHead('https://i.imgur.com/mpVR7I9.jpg')
 }
 
 document.querySelectorAll(".weapons img").forEach((el) =>
