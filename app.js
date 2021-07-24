@@ -1,4 +1,4 @@
-import { cold, mw } from "./guns.json";
+import { guns } from "./guns.json";
 
 const createGun = (gun) => {
   const div = document.createElement("div");
@@ -14,11 +14,8 @@ const createHead = (src) => {
    document.querySelector('head').appendChild(meta)
 }
 
-cold.forEach((gun) =>
-  document.querySelector(".cold-war").appendChild(createGun(gun))
-);
-mw.forEach((gun) =>
-  document.querySelector(".warfare").appendChild(createGun(gun))
+guns.forEach((gun) =>
+  document.querySelector(".weapons").appendChild(createGun(gun))
 );
 
 const overlayElement = document.querySelector("#overlay");

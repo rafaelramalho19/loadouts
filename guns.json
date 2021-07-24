@@ -1,5 +1,5 @@
 {
-  "cold": [
+  "guns": [
     {
        "name": "C58",
        "src": "https://media.discordapp.net/attachments/798993285213061151/861718269094264832/unknown.png",
@@ -11,7 +11,7 @@
     {
       "name": "FFAR",
       "src": "https://media.discordapp.net/attachments/798993285213061151/829852073347776542/unknown.png"
-    }
+    },
     {
       "name": "XM4",
       "src": "https://cdn.discordapp.com/attachments/798993285213061151/848061257063465000/unknown.png"
@@ -95,9 +95,7 @@
     {
       "name": "Gallo",
       "src": "https://media.discordapp.net/attachments/798993285213061151/820406878600691742/unknown.png"
-    }
-  ],
-  "mw": [
+    },
     {
       "name": "Amax",
       "src": "https://cdn.discordapp.com/attachments/798993285213061151/798997228311937094/unknown.png"

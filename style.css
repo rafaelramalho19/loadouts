@@ -5,6 +5,15 @@ html {
   font-family: 'Noto Sans TC', sans-serif;
 }
 
+@media(max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  header form {
+    padding-top: 20px;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -45,29 +54,53 @@ body {
 
 .weapons {
   display: flex;
-  justify-content: space-evenly;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-@media (max-width: 600px) {
-  .weapons {
-    flex-direction: column-reverse;
+.weapon {
+  padding: 4px;
+}
+
+@media (min-width: 600px) {
+  .weapon {
+    padding: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .weapon {
+    padding: 40px 16px;
   }
 }
 
 .weapons img {
-  width: 80%;
+  width: 100%;
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .weapons img {
-    width: 100%;
+    width: 30vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .weapons img {
+    width: 25vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  .weapons img {
+    width: 20vw;
   }
 }
 
 .weapons img:hover {
-  transform: scale(1.15);
+  transform: scale(1.3);
 }
 
 .titles {
