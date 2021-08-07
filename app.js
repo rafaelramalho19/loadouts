@@ -27,7 +27,7 @@ const activeWeapon = decodeURIComponent(urlParams.get("gun"));
 if (activeWeapon !== "null" && !!activeWeapon) {
   try {
     overlayElement.removeAttribute("hidden");
-    const { src } = [...cold, ...mw].find((x) => x.name === activeWeapon);
+    const { src } = guns.find((x) => x.name === activeWeapon);
     image.setAttribute("src", src);
     createHead(src)
   } catch (e) {
