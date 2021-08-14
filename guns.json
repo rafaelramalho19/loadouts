@@ -1,6 +1,10 @@
 {
   "guns": [
     {
+      "name": "EM2",
+      "src": "https://media.discordapp.net/attachments/798993285213061151/875931833269882931/unknown.png"
+    },
+    {
       "name": "QBZ",
       "src": "https://media.discordapp.net/attachments/798993285213061151/873367685138874378/unknown.png"
     },
