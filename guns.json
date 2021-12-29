@@ -1,5 +1,6 @@
 {
   "guns": [
+    { "name": "Double Barrel", "src": "https://media.discordapp.net/attachments/798993285213061151/925539385271795722/unknown.png" },
     {
       "name": "Bren",
       "src": "https://media.discordapp.net/attachments/798993285213061151/919070830510608424/unknown.png"
